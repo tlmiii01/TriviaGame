@@ -1,0 +1,10 @@
+body {
+    background: lightgray;
+}
+
+
+.answers {
+    height: 5rem;
+    width: 20rem;
+    background: lightgoldenrodyellow
+}
