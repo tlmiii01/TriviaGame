@@ -17,6 +17,7 @@ function decrementCounter() {
         clearInterval(intervalID);
         $("#status").html("</p>Time's Up!!!</p>");
         displayCorrectAnswerOnMiss();
+        setTimeout(nextQuestion, 3000);
     }
 }
 
@@ -40,6 +41,9 @@ function loadCurrentQuestion() {
 function selectNextQuestion() {
     var questionNumber;
     var isNewQuestion = false;
+
+    $("#status").empty();
+
     do {
         questionNumber = Math.floor(Math.random() * questions.length);
         if (selectedQuestions.indexOf(questionNumber) === -1 ) {
@@ -56,6 +60,12 @@ function displayCorrectAnswerOnMiss() {
     wrongAnswerCount++;
 }
 
+function nextQuestion() {
+    $(".answers").removeClass("correct");
+    currentQuestion = selectNextQuestion();
+    loadCurrentQuestion();
+}
+
 $(document).ready( function() {
     currentQuestion = selectNextQuestion();
     loadCurrentQuestion();
@@ -63,12 +73,15 @@ $(document).ready( function() {
     $(".answer-list .answers").on("click", function() {
         // Stop the timer
         clearInterval(intervalID);
+
         if ( $(this).hasClass("correct") ) {
             $("#status").html("<p>Correct Answer!!!</p>");
             rightAnswerCount++;
+            setTimeout(nextQuestion, 3000);
         } else {
             $("#status").html("<p>Wrong Answer!!!</p>");
             displayCorrectAnswerOnMiss();
+            setTimeout(nextQuestion, 3000);
         }
     })
 })
