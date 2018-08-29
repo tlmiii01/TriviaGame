@@ -60,12 +60,6 @@ var questions = [ new Question("What did the Knights who say Ni interested in?",
     new Answer("The Lady of the Lake", false),
     new Answer("God", true)),
     
-    new Question("What does Arthur do to try and gail access to the French castle?",
-    new Answer("Build a wooden badger", false),
-    new Answer("Say \"Ni\"", false),
-    new Answer("Dress as women", false),
-    new Answer("Build a wooden rabbit", true)),
-    
     new Question("What does Arthur do to try and gain access to the French castle?",
     new Answer("Build a wooden badger", false),
     new Answer("Say \"Ni\"", false),

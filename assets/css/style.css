@@ -10,15 +10,15 @@ h1 {
     font-size: 5rem;
 }
 
-p {
+p, #timer, #status {
     font-size: 1.5rem;
     margin: 0 auto;
 }
 
 .answers {
     height: 5rem;
-    width: 40rem;
-    margin: 0 auto;
+    width: 20rem;
+    margin: 1rem auto;
 }
 
 .answers:hover {
@@ -26,6 +26,6 @@ p {
     background: #eee;
 }
 
-#status {
-    color: #eee;
+.answer-list {
+    margin-top: 3rem;
 }
