@@ -1,4 +1,4 @@
-# unit-4-game
+# trivia-game
 
 Monty Python's Trivia Game!!
 
