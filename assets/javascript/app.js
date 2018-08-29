@@ -13,7 +13,8 @@ var inActiveGame = false;
 
 function decrementCounter() {
     currentTimer--;
-    $("#timer").html("</p>Time remaining: " + currentTimer + "</p>");
+    // $("#timer").html('</p id="timer">Time remaining: ' + currentTimer + "</p>");
+    $("#timer").text("Time remaining: " + currentTimer);
 
     if (currentTimer === 0) {
         clearInterval(intervalID);

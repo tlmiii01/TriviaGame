@@ -1,10 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Chewy');
+
 body {
-    background: lightgray;
+    background-image: url("../images/bg-3.jpg");
+    font-family: 'Chewy', cursive;
+    color: #eee;
 }
 
+h1 {
+    font-size: 5rem;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 0 auto;
+}
 
 .answers {
     height: 5rem;
-    width: 20rem;
-    background: lightgoldenrodyellow
+    width: 40rem;
+    margin: 0 auto;
+}
+
+.answers:hover {
+    color: #095b95;
+    background: #eee;
+}
+
+#status {
+    color: #eee;
 }
